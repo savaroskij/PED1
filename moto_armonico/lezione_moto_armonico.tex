@@ -78,27 +78,60 @@ moti armonici. Chiediamo anche di tracciare, scegliendo un opportuno sistema di 
 funzione della posizione, $F_x(x)$\cite{barbieri2015good}.
 
 \section{Explain}
-Nella lezione seguente si può approcciare la fase di explain.
+Nella lezione seguente possiamo approcciare la fase di explain.
 Essa dovrebbe essere svolta sotto la guida dell'insegnante e 
 sulla base dell'esperienza che gli studenti hanno acquisito nelle
 fasi precedenti. E fondamentale che a questo punto gli studenti
 condividano le spiegazioni dei fenomeni che essi stessi
 hanno sviluppato \cite{duran20045e}.
+Confrontiamo i grafici $x(t)$ e $a(x)$ ottenuti utilizzando il software di
+analisi video \emph{tracker}\footnote{\url{https://physlets.org/tracker/}}.
 
-In questa fase l'obbiettivo è arrivare a comprendere che
-un corpo si muove di moto armonico se per le sue piccole
-oscillazioni la relazione forza-posizione è della forma:
+\begin{figure}
+\centering
+  \includegraphics[width=\textwidth]{pendolo_x_t}
+  \includegraphics[width=\textwidth]{pendolo_a_x}
+  \caption{Grafici di $x(t)$ e $a(x)$ per il pendolo semplice.}
+  \label{fig:pendulum}
+\end{figure}
+
+\begin{figure}
+\centering
+  \includegraphics[width=\textwidth]{cilindro_rotaia_x_t}
+  \includegraphics[width=\textwidth]{cilindro_rotaia_a_x}
+  \caption{Grafici di $x(t)$ e $a(x)$ per il cilindro su rotaia parabolica.}
+  \label{fig:rotaia_parabolica}
+\end{figure}
+
+\begin{figure}
+\centering
+  \includegraphics[width=\textwidth]{rotaia_galileo_x_t}
+  \includegraphics[width=\textwidth]{rotaia_galileo_a_x}
+  \caption{Grafici di $x(t)$ e $a(x)$ per la pallina su rotaia a "V"}
+  \label{fig:rotaia_galileo}
+\end{figure}
+
+Si può evincere che ci sono delle similitudini tra i grafici dell'accelerazione in
+funzione della posizione del pendolo (Figura \ref{fig:pendulum}) e della rotaia parabolica
+(Figura \ref{fig:rotaia_parabolica}), mentre il grafico della posizione in funzione
+del tempo delle due rotaie (Figure \ref{fig:rotaia_parabolica} e
+\ref{fig:rotaia_galileo}), di primo acchito, sembrano identici. Tuttavia non è così.
+Infatti il cilindro che oscilla lungo una curva compie lo stesso moto di un pendolo e la traiettoria
+$x(t)$ è rappresentata da delle sinusoidi, mentre il grave che cade lungo un piano inclinato obbedisce alla
+legge dei moti in caduta libera, con accelerazione costante pari a $g\sin(\alpha)$, con $\alpha$ angolo d'inclinazione del
+piano e pertanto la traiettoria $x(t)$ di quest'ultimo è costituito da rami di parabole di concavità opposta
+collegati tra loro.
+Pertanto, sicché la pallina compie dapprima un moto discendente e successivamente ascendente lungo i due
+piani inclinati, il grafico di $a(x)$ mostra una discontinuità di tipo salto nell'origine tra due valori costanti di segno
+opposto.
+
+Per quanto visto, dunque, un moto armonico è caratterizzato dal fatto che in un intorno del suo punto di
+equilibrio (in tutti i nostri esperimenti tale punto è l'origine) il grafico $F_x(x)$ (che è qualitativamente identico a
+quello di $a(x)$ a meno di una costante moltiplicativa) è uguale ad una retta di coefficiente angolare negativo:
 
 \begin{equation}
-F_{\zeta}=-k\zeta, \quad k>0
+F_{x}=-kx, \quad k>0
 \end{equation}
-
-Dove $\zeta$ è una coordinata curvilinea. 
-
-Il professore si può avvalere del software
-\emph{tracker}\footnote{\url{https://physlets.org/tracker/}}
-per mostare agli studenti gli effettivi grafici forza-posizione
-degli esperimenti di interesse.
 
 \section{Extend}
 Ora lo studente è pronto a mettere in pratica le conoscenze
