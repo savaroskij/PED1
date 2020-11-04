@@ -1,11 +1,14 @@
 \documentclass{article}
 \usepackage[T1] {fontenc}
 \usepackage[italian]{babel}
-% Per i link nell'indice
-\usepackage{hyperref}
 \usepackage{cite}
+
 \usepackage{graphicx}
 \graphicspath{ {./images/} }
+\usepackage{float}
+
+% Per i link nell'indice
+\usepackage{hyperref}
 
 \title{Lezioni sul Moto Armonico}
 \author{Daniele Meloccchi, Agnese Montanaro, Matteo Savatteri}
@@ -87,7 +90,7 @@ hanno sviluppato \cite{duran20045e}.
 Confrontiamo i grafici $x(t)$ e $a(x)$ ottenuti utilizzando il software di
 analisi video \emph{tracker}\footnote{\url{https://physlets.org/tracker/}}.
 
-\begin{figure}
+\begin{figure}[H]
 \centering
   \includegraphics[width=\textwidth]{pendolo_x_t}
   \includegraphics[width=\textwidth]{pendolo_a_x}
@@ -95,7 +98,7 @@ analisi video \emph{tracker}\footnote{\url{https://physlets.org/tracker/}}.
   \label{fig:pendulum}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 \centering
   \includegraphics[width=\textwidth]{cilindro_rotaia_x_t}
   \includegraphics[width=\textwidth]{cilindro_rotaia_a_x}
@@ -103,7 +106,7 @@ analisi video \emph{tracker}\footnote{\url{https://physlets.org/tracker/}}.
   \label{fig:rotaia_parabolica}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 \centering
   \includegraphics[width=\textwidth]{rotaia_galileo_x_t}
   \includegraphics[width=\textwidth]{rotaia_galileo_a_x}
