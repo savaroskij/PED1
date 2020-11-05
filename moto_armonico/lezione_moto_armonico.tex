@@ -76,8 +76,9 @@ viene realizzata accostando due piani inclinati (costituiti da mattoni e piastre
 abbiano come punto di contatto le loro estremità finali, così da formare una sorta di “V”. Il punto
 materiale è una pallina di spugna.
 
-Lasciamo indagare gli studenti circa i fenomeni fisici proposti e chiediamo loro quali siano
-moti armonici. Chiediamo anche di tracciare, scegliendo un opportuno sistema di riferimento, un grafico della forza in
+Lasciamo indagare gli studenti circa i fenomeni fisici proposti e chiediamo di fare una classificazione
+dei moti osservati in base alle eventuali somiglianze.
+Chiediamo anche di tracciare, scegliendo un opportuno sistema di riferimento, un grafico della forza in
 funzione della posizione, $F_x(x)$\cite{barbieri2015good}.
 
 \section{Explain}
@@ -135,6 +136,52 @@ quello di $a(x)$ a meno di una costante moltiplicativa) è uguale ad una retta d
 \begin{equation}
 F_{x}(x)=-kx, \quad x \in U(0),\quad k>0
 \end{equation}
+
+Per quanto riguarda invece i grafici della posizione in funzione del tempo ottenuti con Tracker spieghiamo l'origine dell'andamento sinusoidale.
+
+Abbiamo scoperto che il moto del pendolo è un moto armonico perchè segue la legge appena trovata. A partire da questa osservazione si può comprendere la legge oraria. 
+
+Disegnamo un pendolo e tracciamo una circonferenza di raggio R, pari alla lunghezza del pendolo,
+e di centro il vertice del pendolo (Figura \ref{fig:costruzione_moto_circolare}). La traiettoria
+del pesetto è lungo un arco di circonferenza, per questo ha senso fare questo disegno schematico.
+Avendo precedentemente affrontato il moto circolare gli studenti sanno che il modulo
+dell'accelerazione centripeta è dato da: 
+
+\begin{equation}
+a = \omega^2R
+\end{equation}
+
+\begin{figure}[H]
+\centering
+  \includegraphics[width=0.60\textwidth]{costruzione_moto_circolare}
+  \caption{Costruzione geometrica per spiegare la legge oraria del moto armonico.}
+  \label{fig:costruzione_moto_circolare}
+\end{figure}
+
+Dalla costruzione  e dalle conoscenze goniometriche si trova: 
+
+\begin{equation}
+a_x(\theta) = -\omega^2 R \sin(\theta) \quad\quad x(\theta) = R \sin(\theta)
+\end{equation}
+
+Quidi accelerazione e posizione sono proporzionali tra loro. 
+Mentre la velocità risulta essere: 
+
+\begin{equation}
+v_x(\theta) =  v \cos(\theta) = \omega R \cos(\theta) 
+\end{equation}
+
+Dallo studio del moto circolare sappiamo che la velocità angolare $\omega$ è
+data dal rapporto tra l'angolo percorso e il tempo impiegato, pertanto $\theta$
+può essere riscritto come: $\theta = \omega t$. 
+Abbiamo ottenuto che la legge oraria del pendolo, e in generale del moto armonico,
+è della forma:
+
+\begin{equation}
+x(t) = R \sin(\omega t) 
+\end{equation}
+
+come si osservava dai grafici di ottenuti con Tracker.
 
 \section{Extend}
 Ora lo studente è pronto a mettere in pratica le conoscenze
