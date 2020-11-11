@@ -3,6 +3,8 @@
 \usepackage[italian]{babel}
 \usepackage{cite}
 
+\usepackage{amsmath}
+
 \usepackage{graphicx}
 \graphicspath{ {./images/} }
 \usepackage{float}
@@ -76,6 +78,66 @@ condurre un gioco:
 \end{itemize}
 
 Tutte le precedenti sono mosse valide.
+
+\subsection{Posizioni e velocità iniziali}
+Assegnamo alla pedina $m$ la posizione iniziale $(x,y) = (0,0)$ nel nostro
+sistema di riferimento. Per quanto riguarda le coordinate della
+Terra, non ci interessa assegnarle con precisione: ci basta sapere
+che $x_M = 0$ e $y_M \ll 1$.
+
+Assegnamo alla pallina da ping-pong la velocità iniziale $(v_{x,0},0)$,
+causata dalla spinta sul piano orizzontale e alla Terra $(0,0)$, infatti
+nel sistema di riferimento scelto è coomobile con il nostro pianeta.
+
+\subsection{Le interazioni}
+Le masse del nostro sistema interagiscono tramite una coppia di forze dirette
+come la loro congiungente, di verso opposto e di valore assoluto:
+
+\begin{equation}
+|F| = \frac{G M m}{R^2}
+\end{equation}
+
+dove $G$ è la costante di gravitazione universale e $R$ è la distanza tra i due
+corpi. Siccome il moto della pallina da ping-pong è ristretto ad uno spazio
+molto piccolo rispetto al raggio del pianeta, possiamo assumere:
+
+\begin{equation}
+R = R_0 \approx \mbox{cost}
+\end{equation}
+
+Osserviamo che:
+
+\begin{equation}
+|a_M| = \frac{Gm}{R_0^2} << 1
+\end{equation}
+
+dunque possiamo assumere che la presenza della pallina non influenzi in alcun
+modo il moto della Terra.
+
+Per la pallina invece si ha:
+
+\begin{equation}
+|a_m| = \frac{GM}{R_0^2} = g = \mbox{cost}
+\end{equation}
+
+Da queste considerazioni possiamo dedurre che nel nostro modello
+la pallina da ping-pong è sottoposta ad una accelerazione costante
+diretta verso il centro del pianeta, cioè diretta come l'asse $y$,
+ma di verso opposto.
+
+\subsection{Le equazioni del moto}
+Da quanto abbiamo appreso sopra, sappiamo che la Terra rimane ferma
+e le sue coordinate rimangono quelle iniziali per tutto il tempo
+dell'esperimento.
+Dall'espressione dell'accelerazione a cui è sottoposta la pallina
+e dalle condizioni iniziali date sopra, possiamo invece ricavare le
+sue equazioni del moto:
+
+
+\begin{align}
+a_x(t) = 0 \Rightarrow v_x(t) = v_{x,0} \Rightarrow x(t) = v_{x,0}t \\
+a_y(t) = -g \Rightarrow v_y(t) = - g t \Rightarrow y(t) = - \frac{1}{2} g t^2 
+\end{align}
 
 \bibliography{bibliografia}{}
 \bibliographystyle{plain}
