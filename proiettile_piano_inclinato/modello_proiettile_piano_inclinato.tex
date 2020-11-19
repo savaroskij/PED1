@@ -28,12 +28,12 @@ proiettile, analizzato con la tecnica dei \emph{giochi di modellamento newtonian
 \section{Il sistema}
 Il sistema che ci apprestiamo a studiare è costituito da un corpo lasciato cadare da
 un piano inclinato su di una superficie, che ci permetta di individuare il 
-il punto esatto della caduta.  La velocità iniziale del proiettile è raggiunta e
+punto esatto della caduta.  La velocità iniziale del proiettile è raggiunta e
 regolata mediante il piano inclinato, sul quale il corpo in questione viene fatto scivolare
 o rotolare. Questo espediente consente un maggior controllo sul momento iniziale del
-proiettile. L'esperimento è stato condotto in due modalità: nella prima il corpo
+proiettile. Abbiamo condotto l'esperimento in due modalità differenti: nella prima il corpo
 studiato è una macchinina e la superficie tracciante è costituita da uno strato di
-carta carbone (Figura \ref{fig:setup_proiettile_1}), nella seconda invece si utilizzano
+carta carbone (Figura \ref{fig:setup_proiettile_1}), nella seconda invece abbiamo utilizzano
 un cilindretto forato e un foglio di alluminio, rispettivamente
 (Figura \ref{fig:setup_proiettile_2}).
 
@@ -110,9 +110,9 @@ condurre un gioco:
 Tutte le precedenti sono mosse valide.
 
 \subsection{Posizioni e velocità iniziali}
-Assegnamo alla pedina $m$ la posizione iniziale $(x,y) = (-l,h)$ nel nostro
+Assegnamo alla pedina $m$ la posizione iniziale $(x,y) = (-l_1,l_2)$ nel nostro
 sistema di riferimento.
-$l$ è la lunghezza del cateto maggiore del nostro piano inclinato e $h$
+$l_1$ è la lunghezza del cateto maggiore del nostro piano inclinato e $l_2$
 quella del cateto minore.
 Per quanto riguarda le coordinate della
 Terra, non ci interessa assegnarle con precisione: ci basta sapere
@@ -166,7 +166,9 @@ dell'accelerazione gravitazionale. A causa del terzo principio della
 dinamica, la pedina di massa $m$ esercita sul piano una forza uguale in
 valore assoluto e direzione, ma di verso opposto. Essendo il vincolo
 per definizione inamovibile, la forza a cui esso è sottoposto non genera
-moto. Il proiettile invece è sottoposto ad una forza risultante, somma
+moto.
+
+Il proiettile nel complesso è sottoposto ad una forza risultante, somma
 della forza di gravità e della forza vincolare: 
 
 \begin{equation}
@@ -201,8 +203,8 @@ quando si stacca dal piano inclinato e dalle condizioni iniziali,
 possiamo invece ricavare le sue equazioni del moto parabolico:
 
 \begin{align}
-a_x(t) = 0 \Rightarrow v_x(t) = v_{x,0} \Rightarrow x(t) = v_{x,0}t \\
-a_y(t) = -g \Rightarrow v_y(t) = - g t \Rightarrow y(t) + v_{y,0} = - \frac{1}{2} g t^2 + v_{y,0} t  
+a_x(t) &= 0 \Rightarrow v_x(t) = v_{x,0} \Rightarrow x(t) = v_{x,0}t \\
+a_y(t) &= -g \Rightarrow v_y(t) = - g t \Rightarrow y(t) + v_{y,0} = - \frac{1}{2} g t^2 + v_{y,0} t  
 \end{align}
 
 Dalla dinamica del piano inclinato possiamo ricavare le incognite $v_{x,0}$ e $v_{y,0}$.
@@ -213,15 +215,29 @@ ascisse parallelo al piano e orientato dalla sommità verso la punta, e asse del
 dal piano inclinato:
 
 \begin{align}
-a_\parallel(t) = g \sin\alpha \Rightarrow v_\parallel(t) = g \sin\alpha \\
-a_\perp(t) = 0 \Rightarrow v_\perp(t) = 0
+a_\parallel(t) &= g \sin\alpha \Rightarrow v_\parallel(t) = g \sin(\alpha) t \Rightarrow s_\parallel(t) = \frac{1}{2} g \sin(\alpha) t^2 \\
+a_\perp(t) &= 0 \Rightarrow v_\perp(t) = 0 \Rightarrow s_\perp(t) = 0
 \end{align}
 
-Da eguaglianze di trigonometria si ottiene:
+Dalla lunghezza del piano inclinato $l$ possiamo ottenere il tempo che il proiettile
+impiega per raggiungere la fine del piano, grazie alla legge oraria:
+
+\begin{equation}
+\Delta t = \sqrt{\frac{2l}{g\sin{\alpha}}}
+\end{equation}
+
+Dunque abbiamo:
+
+\begin{equation}
+v_{\parallel,0} = \sqrt{2lg\sin{\alpha}} = \sqrt{2gl_2}
+\end{equation}
+
+Applicando la trasformazione tra il sistema di riferimento del piano inclinato
+e quello del tabellone:
 
 \begin{align}
-v_{x,0} = v_\parallel\cos\alpha = g \sin\alpha \cos\alpha \\
-v_{y,0} = -v_\parallel\sin\alpha = g \sin^2\alpha 
+v_{x,0} &= v_\parallel\cos\alpha = \sqrt{2gl_2} \cos\alpha \\
+v_{y,0} &= -v_\parallel\sin\alpha = -\sqrt{2gl_2} \sin\alpha 
 \end{align}
 
 \section{Attrito}
@@ -230,8 +246,15 @@ materiale, misurando il tempo che quest'ultimo impiega per giungere alla base de
 il coefficiente d'attrito dalle equazioni del moto:
 
 \begin{equation}
-\frac{1}{2} g (\sin\alpha - \mu\cos\alpha) t^2 = l
+\frac{1}{2} g (\sin\alpha - \mu\cos\alpha) \Delta t^2 = l \Rightarrow \mu = \tan\alpha - \frac{2l}{g\Delta t^2 \cos\alpha} 
 \end{equation}
+
+e ripetendo i conti precedenti:
+
+\begin{align}
+v_{x,0} &= \sqrt{2lg (\sin{\alpha} - \mu \cos\alpha)} \cos\alpha \\
+v_{y,0} &= \sqrt{2lg (\sin{\alpha} - \mu \cos\alpha)} \sin\alpha
+\end{align}
 
 \bibliography{bibliografia}{}
 \bibliographystyle{plain}
