@@ -1,23 +1,58 @@
 \documentclass{report} \usepackage[T1]{fontenc} \usepackage[italian]{babel}
 \usepackage{hyperref}
+\usepackage{color}
 \usepackage[type={CC},modifier={by-sa},version={4.0},]{doclicense}
 \usepackage{cite}
 
 \title{Title} \author{Daniele Melocchi\\Agnese Montanaro\\Matteo
 Savatteri}
 
-\begin{document} \maketitle \setcounter{page}{2}
+\begin{document}
+\maketitle
+\setcounter{page}{2}
 
 Copyright Daniele Melocchi, Agnese Montanaro, Matteo Savatteri -
 \the\year \doclicenseThis \thispagestyle{empty}
 
 \tableofcontents
 
-\chapter{Introduzione} Questo documento presenta un ciclo di lezioni
+\chapter{Introduzione}
+Questo documento presenta un ciclo di lezioni
 indirizzate ad una classe 1\textsuperscript{a} Liceo Scientifico,
 riguardanti le basi della cinematica, il moto rettilineo uniforme
-e uniformemente accelerato. Il percorso si fonda sul modello didattico
-delle 5e\cite{bybee2006bscs}.
+e uniformemente accelerato.
+
+Il percorso didattico è suddiviso in tre moduli, all'interno dei quali
+sono affrontati i seguenti argomenti, ordinati secondo un criterio
+di complessità crescente, partendo da un approccio completamente
+qualitativo, per passare ad uno via via più quantitativo:
+\begin{enumerate}
+\item Posizioni, distanze, istanti e intervalli temporali, leggi orarie.
+\item Velocità media, velocità istantanea, moto rettilineo uniforme.
+\item Accelerazione media, accelerazione istantanea, moto uniformemente
+      accelerato.
+\end{enumerate}
+
+Il percorso si fonda sul \emph{modello didattico delle 5E}\cite{bybee2006bscs}.
+Ogni modulo si suddivide dunque in cinque sezioni, nelle quali sono presentate
+attività, riflessioni, suggerimenti e problematiche, per ciascuna delle
+cinque fasi di questo metodo di natura \emph{inquiry}:
+\emph{engage}, \emph{explore}, \emph{explain}, \emph{extend}, \emph{evaluate}.
+
+\section{Propedeuticità}
+Al fine della buona riuscita di questo percorso, è necessario che gli
+studenti coinvolti abbiano affrontato e consolidato la comprensione
+dei seguenti argomenti:
+\begin{itemize}
+\item Operazioni algebriche elementari (es. somma, prodotto, frazioni
+      e potenze).
+\item Equazioni di primo grado.
+\item Rappresentazioni di numeri su un asse ordinato.
+\item Rappresentazione di coppie di numeri (punti) su un diagramma
+      cartesiano.
+\item \colorbox{red}{altro?}
+\end{itemize}
+
 
 \bibliography{bibliografia}{}
 \bibliographystyle{plain}
