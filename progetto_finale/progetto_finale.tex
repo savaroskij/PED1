@@ -154,6 +154,58 @@ e osservando che la posizione dell'oggetto preso come riferimento per tutti gli 
 si chiama \emph{origine} e le tre distanze sono rappresentate da tre numeri lungo
 gli assi, chiamati \emph{coordinate cartesiane} tridimensionali.
 
+\appendix
+\chapter{Analisi Dati}
+\section{Moto Rettilineo Uniforme}
+
+\begin{figure}[H]
+\centering
+  \includegraphics[width=\textwidth]{fit_marble}
+  \caption{Fit lineare dei dati per l'esperimento della biglia che cade nel detersivo,
+           un esempio di moto rettilineo uniforme.}
+  \label{fig:fit_marble}
+\end{figure}
+
+\begin{table}[H]
+  \renewcommand{\arraystretch}{1.5}
+  \centering
+  \begin{tabular}{ | c | }
+    \hline
+    $v$ [$m/s$] \\
+    \hline
+    $0.01180\pm0.00010$ \\
+    \hline
+  \end{tabular}
+  \caption{Valore atteso ed errore della velocità da fit con il metodo dei minimi
+           quadrati.}
+  \label{tab:fit_marble}
+\end{table}
+
+\section{Moto Rettilineo Uniformemente Accelerato}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{fit_bike}
+  \caption{Fit lineare dei dati per l'esperimento della bicicletta che scende da una rampa,
+           un esempio di moto rettilineo uniformemente accelerato.}
+  \label{fig:fit_bike}
+\end{figure}
+
+\begin{table}[H]
+  \renewcommand{\arraystretch}{1.5}
+  \centering
+  \begin{tabular}{ | c | c | c | }
+    \hline
+    $a$ [$m/s^2$] &  $\theta$ [deg] & pendendenza [\%] \\
+    \hline
+    $0.706\pm0.015$ & $4.13\pm0.09$ & $7.21\pm0.15$ \\
+    \hline
+  \end{tabular}
+  \caption{Valore atteso ed errore dell'accelerazione, dell'angolo di inclinazione della rampa
+           e della pendenza percentuale da fit con il metodo dei minimi quadrati.}
+  \label{tab:fit_bike}
+\end{table}
+
 \bibliography{bibliografia}{}
 \bibliographystyle{plain}
 \addcontentsline{toc}{chapter}{Bibliografia}
