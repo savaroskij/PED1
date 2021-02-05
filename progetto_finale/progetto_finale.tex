@@ -6,6 +6,7 @@
 \usepackage{graphicx}
 \graphicspath{ {./media/images/} }
 \usepackage{float}
+\usepackage{subcaption}
 
 \usepackage{hyperref}
 
@@ -238,8 +239,7 @@ studente  possa avere occasione di riflettere e giudicare i risultati ottenuti.
   \label{fig:piano_s_t}
 \end{figure}
 
-
-\section{Explain}
+\section{Explain}\label{posizioni_istanti_explain}
 \begin{itemize}
 \item \textbf{Tempo richiesto:} 20\textsuperscript{$\prime$} di discussione tra
 studenti + 30\textsuperscript{$\prime$} di dialogo con il docente
@@ -369,6 +369,87 @@ Per la valutazione di questo primo modulo del percorso il docente tiene conto de
 partecipazione degli studenti alle varie attività proposte, del lavoro svolto sui
 grafici richiesti e del loro coinvolgimento attivo all’interno dei gruppi di discussione.
 
+\chapter{Velocità, Moto Rettilineo Uniforme}
+In questa fase lo studente verrà guidato alla comprensione del concetto di
+velocità media e istantanea, e di legge oraria di un moto rettilineo
+uniforme attraverso alcune attività. Occorre che il percorso sia guidato, perché
+gli studenti di prima liceo affrontano per la prima volta questi argomenti e
+il \emph{modus operandi} della fisica.
+
+\section{Engage}
+
+\begin{itemize}
+\item \textbf{Tempo richiesto in aula:} 15\textsuperscript{$\prime$}
+\item \textbf{Materiale:} Liquidi di Differente Viscosità, Contenitori Trasparenti Identici, Biglia
+\end{itemize}
+
+L’insegnante mostra agli studenti la caduta di una biglia in diversi liquidi. \`E
+possibile eseguire questo esperimento sia in DAD, mostrando in telecamera i
+contenitori con i liquidi, sia in classe portando tutto il materiale
+occorrente. La scelta delle sostanze utilizzate è libera. L’unico criterio importante è
+che i liquidi abbiano viscosità sensibilmente diverse, poiché in questo modo la velocità
+della biglia all'interno del contenitore sarà visibilmete differente.
+
+In questo progetto sono stati scelti le seguenti sostanze: detersivo per i piatti,
+acqua e olio di semi; posti in tre contenitori di pari altezza, trasparenti e di forma
+il più possibile cilindrica (così da non avere effetti ottici di deformazione della
+biglia che cade) (Figura \ref{fig:liquids}).
+Le biglie utilizzate devono essere tutte uguali tra loro.
+
+\begin{figure}[H]
+\centering
+  \begin{subfigure}[b]{0.5\textwidth}
+  \includegraphics[width=\textwidth]{cat_caviar}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.5\textwidth}
+  \includegraphics[width=\textwidth]{cat_caviar}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.5\textwidth}
+  \includegraphics[width=\textwidth]{cat_caviar}
+  \end{subfigure}
+  \caption{
+           I tre contenitori riempiti con i liquidi
+           scelti per l'attività di engage sulla
+           velocità: detersivo, acua, olio di semi.
+          }
+  \label{fig:liquids}
+\end{figure}
+
+Prima di iniziare la fase operativa, il professore propone un gioco
+agli studenti, chiedendo loro di indovinare in quale liquido la biglia
+si muoverà più velocemente. \`E importante che in questa fase e per
+tutto il resto del percorso didattico, il docente non utilizzi termini
+che si riferiscono a concetti che gli studenti non hanno mai
+affrontato prima. \`E necessario infatti che lo studente faccia
+esperienza dei significati ai quali questi termini riferiscono,
+prima che i termini vengano introdotti. Questo vale in particolare
+quando i termini in questione trovano un utilizzo in contesti
+non scientifici\cite{arons1997teaching}.
+Il professore dunque non parlerà mai di \emph{velocità} durante
+la presentazione di questa attività, ma dirà ad esempio:
+``Riuscite a prevedere quale biglia percorrerà la \emph{distanza}
+dalla sommità alla base del recipiente nell'\emph{intervallo di tempo}
+minore?'', utilizzando i termini introdotti nella Sezione
+\ref{posizioni_istanti_explain}.
+
+In seguito l'insegnante effettua l'esperimento davanti alla classe.
+Se l'esperienza viene mostrata in modalità in presenza, il professore
+può chiedere a tre studenti di lasciar cadere la biglia nei tre recipienti
+nello stesso momento; in questo modo gli alunni saranno facilitati
+nell'osservare quale pallina giunge prima e quale dopo sul fondo del
+recipiente. Nel caso della DAD, utilizzerà liquidi diversi in sequenza,
+ma dovrà avere partcicolare cura di scegliere tre sostanze dalla
+viscosità molto diversa
+\footnote{
+          \`E possibile scaricare il video della biglia che
+          cade nel detersivo presso
+          \href{https://github.com/savaroskij/PED1/blob/master/progetto_finale/media/video/biglia_detersivo.mp4?raw=true}{questo indirizzo web}.
+          Lo stesso esperimento con acqua si può trovare
+          \href{http://burymewithmymoney.com/}{qui},
+          e
+          \href{http://burymewithmymoney.com/}{qui}
+          quello con olio di semi.
+         }.
 
 \chapter{Accelerazione, Moto Rettilineo Uniformemente Accelerato}
 \section{Explain}\label{a_explain}
