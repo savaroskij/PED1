@@ -932,13 +932,14 @@ tempo ai quali essi sono stati attarversati dalla bicletta. L’insegnante
 chiarisce che la posizione di ciascun pezzo di nastro è
 ottenuta sommando le distanze percorse precedentemente e che i tempi
 corrispondenti sono a loro volta somma degli intervalli di tempo precedenti.
-Inoltre è richiesto di provare a tracciare una curva che passi per questi
-punti. Il Professore non svela agli studenti come svolgere quest’ultima
+Inoltre è richiesto di provare a collegare questi punti tra loro sul grafico,
+immaginando come si possa essere svolto il moto tra una misura è l'altra.
+Il Professore non svela agli studenti come svolgere quest’ultima
 attività, in quanto desidera che essi riflettano sull'esperienza sensoriale
 provata durante l’esperimento, focalizzandosi sul moto in ciascun
 tratto e nel suo insieme.
 
-\section{Attività Bonus in Presenza}
+\section{Attività Bonus}
 Qualora l’insegnante la lezione si svolga in presenza, un'attività aggiuntiva da
 proporre potrebbe essere la caduta di un carrello lungo un piano inclinato
 alla cui base è presente un sensore di prossimità. Quest’ultimo è programmato
@@ -949,6 +950,192 @@ intervalli di tempo, focalizzando l’attenzione degli studenti sulla variazione
 delle distanze percorse nei diversi tratti.
 
 \section{Explain}\label{a_explain}
+
+\begin{itemize}
+\item \textbf{Tempo richiesto in aula:} 100\textsuperscript{$\prime$}
+\item \textbf{Materiale:} Computer
+\end{itemize}
+
+Dopo che gli studenti hanno svolto tutte le attività proposte, occorre un
+confronto con l’insegnante e con i propri compagni di classe su quanto
+osservato. Nel corso di tale confronto il professore deve premurarsi di
+utilizzare un software versatile,  per disegnare in tempo reale
+sui grafici ottenuti nelle attività precedenti gli elementi grafici
+proposti dagli studenti
+\footnote{
+          Nell'ambito di questo progetto si è utilizzato il
+          \emph{Free Software}
+          \emph{JupyterLab} con la libreria \emph{Matplotlib}.
+          Altri software, come \emph{GeoGebra} o \emph{Desmos}
+          sono scelte valide.
+         }.
+Inizialmente il professore chiede di descrivere i grafici ottenuti per le
+velocità medie dei diversi tratti del percorso (si vede un esempio di quello
+che gli studenti dovrebbero ottenere nella Figura \ref{fig:v-N_tratto})
+
+\begin{figure}[H]
+\centering
+  \includegraphics[width=\textwidth]{v-N_tratto}
+  \caption{Il grafico delle velocità medie per i tratti della
+           discesa in funzione del numero del tratto.}
+  \label{fig:v-N_tratto}
+\end{figure}
+
+si ritiene che la quasi totalità degli
+studenti osservi una variazione delle velocità media nei diversi tratti. In
+particolare si dovrebbe notare  un aumento della velocità, supportato
+dall'esperienza sensoriale
+provata durante la discesa. La letteratura
+riporta che lo \emph{speeding up}, ovvero l'aumento della velocità,
+risulta intuitivo agli studenti\cite{trowbridge1981investigation};
+per questo motivo si è scelto un esperimento \emph{embodied}.
+Il docente, quindi, domanda alla classe se vi è una
+relazione particolare tra i punti graficati: alcuni studenti potrebbero notare
+che in prima approssimazione giacciono su una retta obliqua,
+in caso contrario è il professore stesso ad indicarlo.
+Già in questa fase gli studenti potrebbero dedurre che il moto in analisi non è
+rettilineo uniforme, poiché la retta non è orizzontale come quella incontrata
+nel Capitolo \ref{velocità}, indicando che la velocità non rimane costante.
+
+Successivamente si considera il secondo grafico relativo allo spostamento in
+funzione del tempo. Il docente chiede ai ragazzi di mostrare come hanno
+collegato i punti successivi del grafico. Si suppone che qualche studente abbia
+tracciato delle spezzate che congiungono i  vari punti, in caso contrario è il
+docente a disegnare un grafico di questo tipo. L’insegnante conduce gli studenti a
+riflettere sul fatto che, poiché ciascun segmento ha una propria pendenza,
+significa che la velocità dovrebbe essere uniforme nel tratto considerato, e dovrebbe
+invece cambiare valore nel tratto successivo. Gli studenti realizzano che
+quanto osservato implicherebbe che la velocità cambi \emph{senza continuità}
+ad ogni volta che si attraversa un pezzo di nastro adesivo, ma questo non
+corrisponde con quanto provato durante l’attività.
+Il professore può guidare gli studenti ponendo una domanda come
+``Ogni volta che incontravate un pezzo di nastro adesivo lungo il percorso
+sentivate un sobbalzo o uno strappo? Oppure vi sembrava che anche in questi
+punti il moto fosse regolare?''.
+L’ipotesi della spezzata
+fallisce nel descrivere il moto studiato, dunque il professore deve guidare gli
+studenti alla scoperta di quale sia una funzione più adatta. A questo scopo egli
+chiede agli alunni di provare a prevedere la posizione corrispondente  agli
+istanti che si trovano a metà di ogni intervallo di tempo.
+Si presume che essi provino a posizionare i punti vicino al segmento
+corrispondente della spezzata e non su di essa, poiché si è appurato essere una
+soluzione non adatta. Il docente successivamente mostra ai ragazzi i punti da
+lui tracciati, che si basano sull’analisi dei dati ottenuti svolgendo in prima
+persona l’attività prima della lezione (Appendice \ref{appendix_data_analysis}).
+e reitera il procedimento \ref{fig:parabola_sequence}.
+In questo modo emerge sempre di più correttamente l’andamento del grafico
+dello spostamento in funzione del tempo.
+
+Alla classe viene chiesto di ipotizzare
+l’equazione che meglio descrive tale andamento, ovvero la legge oraria di questo moto.
+\`E plausibile che uno dei primi tentativi sia della forma:
+
+\begin{equation}
+s(t) = kt
+\end{equation}
+
+dove $k$ è un parametro, che può essere scelto da ciascuno studente
+\footnote{
+          Tale espressione dovrebbe essere ben nota agli
+          studenti in quanto rappresenta la più semplice relazione di proporzionalità
+          diretta tra spostamento e tempo. Di conseguenza è anche noto che il grafico
+          corrispondente è una retta.
+         }.
+Il professore grafica tale funzione con l’utilizzo del software,
+imponendo come coefficiente di proporzionalità $k$ quelli suggeriti dalla classe.
+Gli studenti noteranno immediatamente che la retta non è una buona scelta.
+Il professore rafforza questa convinzione, ricordando alla classe dello
+\emph{speeding up} percepito durante la discesa.
+La seconda ipotesi più semplice dovrebbe essere quella di un'espressione quadratica:
+
+\begin{equation}
+s(t) = kt^2
+\end{equation}
+
+dove $k$ è ancora un parametro
+\footnote{
+          Non occorrelo studente arrivi ad ipotizzare un polinomio di secondo grado generico,
+          poiché il termine lineare e quello noto risultano nulli per le condizioni
+          dell’attività svolta. Infatti, il corpo parte da fermo e si prende come origine
+          la posizione di partenza.
+         }.
+
+\begin{figure}[H]
+\centering
+  \begin{subfigure}[b]{0.49\textwidth}
+  \includegraphics[width=\textwidth]{s-t_parabola1}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.49\textwidth}
+  \includegraphics[width=\textwidth]{s-t_parabola2}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.49\textwidth}
+  \includegraphics[width=\textwidth]{s-t_parabola3}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.49\textwidth}
+  \includegraphics[width=\textwidth]{s-t_parabola4}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.49\textwidth}
+  \includegraphics[width=\textwidth]{s-t_parabola5}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.49\textwidth}
+  \includegraphics[width=\textwidth]{s-t_parabola6}
+  \end{subfigure}
+  \caption{
+           Un esempio di sequenza di grafici utilizzati
+           dal professore per aiutare gli studenti a
+           comprendere quale sia la curva che meglio
+           rappresenta il moto della bicicletta sulla
+           rampa.
+          }
+  \label{fig:parabola_sequence}
+\end{figure}
+
+Qualora durante la discussione non emerga da parte degli studenti
+l’intuizione di considerare un'espressione quadratica, infine è il docente
+stesso a suggerirla, ricordando agli studenti tutte le operazioni matematiche
+che essi conoscono e graficando alcune di esse per confrontarle con
+l'andamento di interesse. Questo serve ad escludere quelle espressioni
+che comportano una decrescita nel tempo (come $s(t) = \frac{1}{t}$).
+Occorre che l’insegnante tracci il grafico della potenza
+quadratica con il software, poichè lo studente non ne ha una conoscenza
+pregressa.
+
+Ora occorre che il professore chieda agli studenti di fare di capire quale
+possa essere il
+valore del coefficiente $k$ che meglio descriva i dati. Si ritiene che questa
+fase di ricerca sia utile agli studenti, per comprendere come si modifica il
+grafico al variare di tale parametro. Dopo alcune ipotesi, è il professore a
+mostrare la curva che meglio descrive l’andamento: la curva ottenuta fissando
+come $k$ al valore ricavato a partire dall’analisi dati.
+
+Nell’ultima parte della lezione si desidera che gli studenti comprendano il
+significato fisico del parametro $k$ (a meno di una costante moltiplicativa).
+L’insegnante riconduce l’attenzione dei ragazzi al grafico delle
+velocità medie in funzione dei tratti successivi (Figura \ref{fig:v-N_tratto}).
+In particolare egli mostra nuovamente che i
+punti giacciono su una retta. Questo significa che, prese le due velocità medie di
+due tratti successivi, la loro differenza rimane \emph{costante} qualsiasi sia la coppia
+di tratti scelti. Gli studenti iniziano ad intuire che vi è una grandezza costante che
+descrive la variazione della velocità. Successivamente alla classe viene
+ricordato che il grafico dello spostamento in funzione del tempo trascorso è
+stato ottenuto a partire da una spezzata, infittendo sempre più i suoi punti.
+Sì può dunque far notare agli alunni che, avendo ciascun segmento una determinata
+pendenza (e quindi un preciso valore di velocità media), la velocità media
+varia negli intervalli di tempo successivi. Per analogia a quanto svolto nel
+Capitolo \ref{velocità}, questa variazione della velocità nel tempo corrisponde
+ad una grandezza fisica: l’\emph{accelerazione media}. Essa corrisponde
+all’incremento medio delle velocità nei tratti.
+Il professore può trarre due conclusioni: il coefficiente del termine di
+secondo grado corrisponde all’accelerazione media, a meno di un fattore $\frac{1}{2}$
+\footnote{
+          Il docente può lasciare non chiarito il motivo di questo fattore $\frac{1}{2}$,
+          mentre può supportare la corrispondenza tra il coefficiente $k$ e l’accelerazione
+          media facendo ragionare i ragazzi sulle unità di misura delle grandezze
+          nell’equazione: $s(t) = kt^2$.
+         }
+ed essa rimane costante durante il moto.
+Quest’ultima caratteristica permette all’insegnante di definire il moto
+analizzato come \emph{uniformemente accelerato}.
 
 \section{Extend}
 \begin{itemize}
